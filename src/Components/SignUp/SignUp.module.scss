@@ -1,0 +1,602 @@
+// @import "../../Components/assets/scss/abstracts";
+
+// .main {
+//   min-height: 100vh; 
+//   width: 100%;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   gap: 0px;
+//   overflow: hidden;
+
+//   .imgSection {
+//     width: 100%;
+//     height: 100%;
+//     position: relative;
+
+//     img {
+//       object-fit: cover;
+//       width: 100%;
+//       height: 100%;
+//     }
+//   }
+
+//   .loginPart {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 20px;
+//     width: 100%;
+//     // margin-bottom: 30px;
+//     // min-height: 100%; 
+//     box-sizing: border-box;
+
+//     .loginContent {
+//       width: 100%;
+//       max-width: 400px;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+     
+//       gap: 32px;
+
+//       .frame {
+//         width: 100%;
+//         max-width: 400px;
+//         gap: 32px;
+
+//         .header {
+//           width: 100%;
+//           gap: 24px;
+
+//           .logo {
+//             width: 100%;
+//             max-width: 270px;
+//             margin: 0 auto;
+//           }
+
+//           .divisions {
+//             width: 420px;
+//             height: 74px;
+//             gap: 12px;
+//             margin-right: 20px;
+//             margin-top: 24px;
+
+//             .loginTxt {
+//               font-family: Open Sans;
+//               font-size: 24px;
+//               font-weight: 700;
+//               opacity: 0.9;
+//               color: black;
+//               text-align: center;
+//             }
+
+//             .txt {
+//               font-weight: 100;
+//               font-family: Open Sans;
+//               color: gray;
+//               display: flex;
+//               justify-content: center;
+//               margin-top: 20px;
+//             }
+//           }
+//         }
+
+//         form {
+//           width: 100%;
+//           gap: 5px;
+//           label {
+//             font-size: 14px;
+//             margin-bottom: 10px;
+//             font-family: Open Sans;
+//           }
+
+//           .input {
+//             width: 100%;
+//             padding-left: 8px;
+//             font-size: 14px;
+//             height: 44px;
+//             margin-bottom: 10px;
+//             border-radius: 8px;
+//           }
+
+//           .rememberMeContainer {
+//             display: flex;
+//             justify-content: space-between;
+//             margin-top: 20px;
+//           }
+
+//           .inputHalf {
+//             width: 48%;
+//           }
+//         }
+
+//         .signupSec {
+//           width: 100%;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 1440px) {
+//   .main {
+//     grid-template-columns: 1fr;
+//     .imgSection {
+//       display: none;
+//     }
+//   }
+// }
+
+// @media (max-width: 1024px) {
+//   .main {
+//     grid-template-columns: 1fr;
+//     .imgSection {
+//       display: none;
+//     }
+//     .loginPart {
+//       padding: 20px;
+//     }
+//     .loginContent {
+//       width: 100%;
+//       max-width: 350px;
+//     }
+//   }
+// }
+
+// .doubleInput {
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 20px;
+// }
+
+// .halfWidth {
+//   display: flex;
+//   flex-direction: column;
+//   width: 48%;
+// }
+
+// .input {
+//   width: 100%;
+//   height: 44px;
+//   padding: 0px;
+//   border-radius: 8px;
+// }
+
+// .inputText {
+//   margin-bottom: 16px;
+//   font-size: 12px;
+// }
+
+// .errorText {
+//   color: red;
+//   font-size: 12px;
+// }
+
+// .label {
+//   font-size: 14px;
+//   font-family: Open Sans;
+//   font-weight: 400;
+//   color: black;
+// }
+
+// // @import "../../Components/assets/scss/abstracts";
+
+// //   .main {
+// //     height: 100vh;
+// //     overflow: hidden;
+// //     grid-template-rows: 1fr;
+// //     grid-template-columns: 1fr 500px;
+// //     display: grid;
+// //     background-color: snow;
+  
+
+// //   .imgSection {
+// //     max-width: 100% !important;
+// //     position: relative;
+
+// //     img {
+// //       object-fit: cover;
+// //       width: 100%;
+// //       height: 100%;
+// //     }
+// //   }
+
+// //   .loginPart {
+// //     display: flex;
+// //     justify-content: center;
+// //     align-items: center;
+// //     padding:20px; 
+// //     //margin-bottom: 80px;
+// //     height: 100%;
+// //     overflow-y: auto;
+// //     //background-color: red;
+
+// //     .loginContent {
+// //         width: 420px;
+// //         height: 100%;
+// //         display: flex;
+// //         flex-direction: column;
+// //         justify-content: center; 
+// //         align-items: center;
+// //         gap: 32px;
+// //        // margin-bottom: 150px;
+    
+// //     .frame{
+// //         width: 420px;
+// //         height: 100%;
+// //         gap: 32px;
+
+// //     .header{
+// //         width: 420px;
+// //         height: 278px;
+// //         gap: 24px;
+
+// //         .logo{
+// //             width: 270px;
+// //             height: 180px;
+// //             display: flex;
+// //             margin-left: 70px;
+// //             // margin-top: -46px;
+// //         }
+        
+// //       .divisions {
+// //        width: 420px;
+// //        height: 74px;
+// //        gap: 12px;
+// //        margin-right: 20px;
+// //        //margin-top: -24px;
+
+// //        .loginTxt {
+// //         font-family: Open Sans;
+// //         font-size: 24px;
+// //         font-weight: 700;
+// //         opacity: 0.9;
+// //         color: black;
+// //         // margin-bottom: 40px;
+// //         text-align: center;
+// //       }
+
+// //       .txt {
+// //         font-weight: 100;
+// //         font-family: Open Sans;
+// //         color: gray;
+// //         display: flex;
+// //         justify-content: center;
+// //       }
+// //       }
+// //     }
+
+// //     form {
+// //       width: 420px;
+// //         height: 430px;
+// //         gap: 5px;
+// //       label {
+// //         font-family: Open Sans;
+// //         font-size: 14px;
+// //         font-weight: 400;
+// //         color: black;
+// //         margin-bottom: 10px;
+// //         display: block;
+// //       }
+
+// //       .inputText {
+// //         font-family: Open Sans;
+// //         font-weight: 500;
+// //         text-align: center;
+// //         color: white;
+// //         margin-left: 0;
+// //         padding-left: 0;
+// //       }
+
+// //       .input {
+// //         width: 420px;
+// //         padding-left: 8px;
+// //         font-weight: 500;
+// //         height: 44px;
+// //         margin-bottom: 10px;
+// //         border-radius: 8px;
+// //       }
+
+// //       .rememberMeContainer {
+// //         display: flex;
+// //         justify-content: space-between;
+// //         align-items: center;
+// //         margin-top: 20px;
+// //       }
+
+// //       .roleAndDeptContainer {
+// //         display: flex;
+// //         justify-content: space-between;
+// //         margin-top: 20px;
+// //       }
+
+// //       .inputHalf {
+// //         width: 200px;
+// //         height: 44px;
+// //       }
+
+// //       .rememberMeCheckbox {
+// //         display: flex;
+// //         align-items: center;
+// //       }
+
+// //       .signUpSection {
+// //         margin-top: 20px;
+// //         text-align: center;
+// //       }
+// //     }
+// //     .signupSec{
+// //         width: 420px;
+// //         height: 80px;
+// //         gap: 16px;
+
+// //         .signupButton{
+// //             width: 420px;
+// //             height: 44px;
+// //             gap: 16px;
+// //         }
+// //     }
+// // }
+    
+// //   }
+// // }
+// // }
+
+// // @media (max-width: 1024px) {
+// //   .main {
+// //     grid-template-columns: 1fr;
+
+// //     .imgSection {
+// //       display: none;
+// //     }
+
+// //     .loginPart form {
+// //       max-width: 100%;
+// //     }
+// //   }
+// // }
+
+// // .doubleInput {
+// //   display: flex;
+// //   justify-content: space-between;
+// //   gap: 20px;
+// // }
+
+// // .halfWidth {
+// //   display: flex;
+// //   flex-direction: column;
+// //   width: 48%;
+// // }
+
+// // .input {
+// //   width: 100%;
+// //   height: 44px;
+// //   padding: 0px;
+// // //   margin-top: 5px;
+// //   border-radius: 8px;
+// // }
+
+// // .inputText {
+// //   margin-bottom: 16px;
+// // }
+
+// // .errorText {
+// //   color: red;
+// //   font-size: 12px;
+// // }
+
+// // .label {
+// //   font-size: 14px;
+// // }
+
+@import "../../Components/assets/scss/abstracts";
+
+  .main {
+    height: 100vh;
+    overflow: hidden;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 500px;
+    display: grid;
+    background-color: snow;
+  
+
+  .imgSection {
+    max-width: 100% !important;
+    position: relative;
+
+
+    img {
+      object-fit: fill;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .loginPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px; 
+    //margin-bottom: 80px;
+    height: 100%;
+    overflow-y: auto;
+    //background-color: red;
+
+    .loginContent {
+        width: 420px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        gap: 32px;
+       // margin-bottom: 150px;
+    
+    .frame{
+        width: 420px;
+        height: 100%;
+        gap: 32px;
+
+    .header{
+        width: 420px;
+        height: 278px;
+        gap: 24px;
+
+        .logo{
+            width: 270px;
+            height: 180px;
+            display: flex;
+            margin-left: 70px;
+            // margin-top: -46px;
+        }
+        
+      .divisions {
+       width: 420px;
+       height: 74px;
+       gap: 12px;
+       margin-right: 20px;
+       //margin-top: -24px;
+
+       .loginTxt {
+        font-family: Open Sans;
+        font-size: 24px;
+        font-weight: 700;
+        opacity: 0.9;
+        color: black;
+        // margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .txt {
+        font-weight: 100;
+        font-family: Open Sans;
+        color: gray;
+        display: flex;
+        justify-content: center;
+      }
+      }
+    }
+
+    form {
+      width: 420px;
+        height: 430px;
+        gap: 5px;
+      label {
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 400;
+        color: black;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .inputText {
+        font-family: Open Sans;
+        font-weight: 500;
+        text-align: center;
+        color: white;
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      .input {
+        width: 420px;
+        padding-left: 8px;
+        font-weight: 500;
+        height: 44px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+      }
+
+      .rememberMeContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .roleAndDeptContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .inputHalf {
+        width: 200px;
+        height: 44px;
+      }
+
+      .rememberMeCheckbox {
+        display: flex;
+        align-items: center;
+      }
+
+      .signUpSection {
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+    .signupSec{
+        width: 420px;
+        height: 80px;
+        gap: 16px;
+
+        .signupButton{
+            width: 420px;
+            height: 44px;
+            gap: 16px;
+        }
+    }
+}
+    
+  }
+}
+}
+
+@media (max-width: 1024px) {
+  .main {
+    grid-template-columns: 1fr;
+
+    .imgSection {
+      display: none;
+    }
+
+    .loginPart form {
+      max-width: 100%;
+    }
+  }
+}
+
+.doubleInput {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.halfWidth {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.input {
+  width: 100%;
+  height: 44px;
+  padding: 0px;
+//   margin-top: 5px;
+  border-radius: 8px;
+}
+
+.inputText {
+  margin-bottom: 16px;
+}
+
+.errorText {
+  color: red;
+  font-size: 12px;
+}
+
+.label {
+  font-size: 14px;
+}

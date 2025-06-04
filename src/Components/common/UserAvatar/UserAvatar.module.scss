@@ -1,0 +1,54 @@
+.userAvatarList {
+    display: flex;
+
+    .item {
+        aspect-ratio: 1;
+        width: 25px;
+        position: relative;
+        border-radius: 50%;
+        &::after {
+            position: absolute;
+            // background-color: #FFCCBC;
+            border-radius: 50px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            width: 30px;
+            height: 30px;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: attr(data);
+
+            color: var(--grey-grey-600, #44464C);
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+        }
+    }
+}
+
+.userAvatarList {
+    display: flex;
+  
+    .item {
+      aspect-ratio: 1;
+      width: 30px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: var(--grey-grey-600, #44464C);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Montserrat;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  

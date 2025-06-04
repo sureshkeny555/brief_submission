@@ -1,0 +1,133 @@
+@import "../../assets/scss/abstracts";
+
+.selectBox {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid #00000033 !important;
+    padding: 12px 20px;
+    cursor: pointer;
+     width: 232px;
+    height: 14px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid rgba(9, 44, 76, 0.40);
+    background: #FFF;
+    color: rgba(0, 0, 0, 0.875);
+    font-family: Open sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 300px;
+    /* 150% */
+    // background: #FFF;
+    // line-height: 48px;
+
+    .placeholder {
+        color: gray;
+    }
+    .dropdownArrow {
+        transition: transform 350ms ease-in-out;
+    }
+
+    &.isOpen {
+
+        border: 1px solid rgba(0, 0, 0, 0.5);
+
+        .dropdownArrow {
+            transform: rotate(180deg);
+        }
+    }
+
+    .popup {
+        position: absolute;
+        top: 120%;
+        width: 100%;
+        left: 0;
+        box-shadow: 2px 4px 12px 1px #00000026;
+        border-radius: 10px;
+        padding: 10px;
+        z-index: 10001;
+        background-color: $white;
+        max-height: 400px;
+        overflow: auto;
+
+        &::-webkit-scrollbar-track {
+            border-radius: 2px;
+            background-color: rgba(242, 153, 74, 0.30);
+            border: none;
+        }
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            width: 5px;
+            height: 5px;
+            border-radius: 8px;
+            background-color: #F2994A;
+        }
+
+        .searchInputContainer {
+            display: flex;
+            gap: 8px;
+            width: 100%;
+            background: $light-grey;
+            border-radius: 4px;
+            padding: 3px;
+            position: sticky;
+            top: 0;
+
+            input {
+                flex: 1;
+                border-radius: 4px;
+                background: $light-grey;
+                border: none;
+                outline: none;
+                width: 100%;
+            }
+        }
+
+        .multiSelectField {
+            padding: 5px 10px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            // margin-bottom: 10px;
+            // margin-top: 5px;
+            border: 1px solid $light-grey;
+
+            .checkbox {
+                width: 20px;
+                height: 20px;
+                accent-color: #F2994A;
+                color: white;
+                border: #F2994A
+            }
+
+            // .radioButton {
+            //     height: 20px;
+            //     width: 20px;
+            //     border-radius: 50%;
+            //     // background-color: red;
+            //     // justify-self: center;
+            //     border: 1px solid blue;
+
+            //     &.active {
+            //         border: 5px solid blue;
+            //     }
+            // }
+            &.active {
+                background-color: #d9dcde;
+                padding: 5px 10px;
+                // color:white
+              }
+        }
+    }
+}

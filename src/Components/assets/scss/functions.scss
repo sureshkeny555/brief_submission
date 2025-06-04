@@ -1,0 +1,38 @@
+@import "./variables.scss";
+
+@function pxToRem($size) {
+  $remSize: $size / $root-font-size;
+  @return #{$remSize}rem;
+}
+
+/* Font Size */
+@while $fs > 8 {
+  .fs-#{$fs} {
+    font-size: $fs * 1px;
+  }
+  $fs: $fs - 1;
+}
+
+//Line-Height
+@while $line-height > 8 {
+  .line-height-#{$line-height} {
+    line-height: $line-height * 1px;
+  }
+  $line-height: $line-height - 1;
+}
+
+/* Font-weight */
+@while $fw > 300 {
+  .fw-#{$fw} {
+    font-weight: $fw;
+  }
+  $fw: $fw - 100;
+}
+
+/* Height */
+@while $height > 400 {
+  .h-#{$height} {
+    height: $height;
+  }
+  $height: $height - 50;
+}

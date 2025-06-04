@@ -1,0 +1,41 @@
+@import "../../assets/scss/abstracts";
+.inputContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    // min-width: 260px;
+
+    .icon {
+        position: absolute;
+        left: 90%;
+        bottom:25px
+    }
+}
+.input {
+    input {
+        border-radius: 0;
+        border: 1px solid rgba(0, 0, 0, 0.20);
+        // max-width: 358px;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.20);
+        background: #FFF;
+    }
+
+    input {
+        // width: 269px;
+        // padding: 12px 20px;
+    }
+
+    input[type='text'],
+    input[type='select'] {
+        // width: 364px;
+    }
+
+    input:focus {
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        box-shadow: none;
+    }
+
+
+}

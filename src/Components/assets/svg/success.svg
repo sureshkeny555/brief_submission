@@ -1,0 +1,21 @@
+<svg width="80px" height="85px" viewBox="0 0 300 335" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shape Layer 1 -->
+  <g transform="translate(150, 167)">
+    <circle cx="0" cy="0" r="119" fill="rgb(48,243,153)" opacity="0.1" />
+  </g>
+
+  <!-- Shape Layer 2 -->
+  <g transform="translate(150, 167)">
+    <circle cx="0" cy="0" r="119" fill="rgb(48,243,153)" opacity="0.2" />
+  </g>
+
+  <!-- Shape Layer 3 -->
+  <g transform="translate(150, 167)">
+    <circle cx="0" cy="0" r="119" fill="rgb(48,243,153)" opacity="0.3" />
+  </g>
+
+  <!-- Shape Layer 4 -->
+  <g transform="translate(148, 185.5)">
+    <path d="M -46.074,-6.315 C -6.815,15.5 44.593,-66.056 -17.136,27.185" fill="none" stroke="white" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

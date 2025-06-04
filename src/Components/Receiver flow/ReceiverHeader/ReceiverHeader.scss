@@ -1,0 +1,67 @@
+// .header {
+//     background-color: #ffffff;
+//     border-bottom: 1px solid #e0e0e0;
+//     height: 60px;
+//     display: flex;
+//     align-items: center;
+//     padding: 0 20px;
+//     position: fixed;
+//     width: 100%;
+//     top: 0;
+//     z-index: 1000;
+  
+//     .header-content {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center; 
+//         width: 100%;
+//     }
+  
+//     .header-title {
+//         font-size: 20px;
+//         font-weight: 600;
+//         color: #0d1c2e;
+//         text-transform: none;
+//     }
+  
+//     .header-right {
+//       display: flex;
+//       align-items: center;
+//       position: absolute; 
+//       right: 50px; 
+  
+//       .notification-icon {
+//           font-size: 18px;
+//           color: #333;
+//           margin-right: 20px;
+//           cursor: pointer;
+//       }
+  
+//       .user-info {
+//           display: flex;
+//           align-items: center;
+  
+//           .user-avatar {
+//               width: 32px;
+//               height: 32px;
+//               border-radius: 50%;
+//               overflow: hidden;
+//               margin-right: 8px;
+  
+//               img {
+//                   width: 100%;
+//                   height: 100%;
+//                   object-fit: cover;
+//               }
+//           }
+  
+//           .username {
+//               font-size: 16px;
+//               color: #333;
+//               font-weight: 500;
+//           }
+//       }
+//   }
+  
+//   }
+  

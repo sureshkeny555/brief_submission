@@ -1,0 +1,296 @@
+@import "./fonts.scss";
+@import "./variables.scss";
+@import './mixins.scss';
+// @use 'sass:list';
+
+$myColors: (
+  "blue1": $blue,
+  "blue-light": $blue-light,
+  "red": $red,
+  "light-grey": $light-grey,
+  "black": $black,
+  "white": $white,
+  "white1": $white1,
+  "darkBlue": $blue-dark,
+  "dark-blue": $dark-blue,
+  "dark-grey": $dark-grey,
+  "yellow": $yellow,
+  "orange": $orange,
+  "light-brown": $light-brown,
+  "light-green": $light-green,
+  "light-black": $light-black,
+  "dark-green": $dark-green,
+  "teal-blue": $teal-blue,
+  "medium-brown": $medium-brown,
+  "pale-grey": $pale-grey,
+  "pale-grey2": $pale-grey2,
+  "pale-grey3": $pale-grey3,
+  "pale-white": $pale-white,
+);
+
+$fws: (
+  "200": 200,
+  "300": 300,
+  "400": 400,
+  "500": 500,
+  "600": 600,
+  "700": 700,
+  "800": 800,
+);
+
+@each $name, $weight in $fws {
+  $index: index($fws, $weight); // updated to list.index
+
+  .fw#{$name} {
+    font-weight: $weight !important;
+  }
+}
+
+@each $name, $colors in $myColors {
+  $index: index($myColors, $colors); // updated to list.index
+
+  .text-#{$name} {
+    color: $colors !important;
+  }
+
+  .bg-#{$name} {
+    background-color: $colors;
+  }
+
+  .bc-#{$name} {
+    border-color: $colors !important;
+  }
+}
+
+.container {
+  padding: 0 40px !important;
+}
+
+.title1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: $black;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.title12 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.title2 {
+  color: $black;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.title2500 {
+  color: $black;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.title3 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.title4 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.titleSmall {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.titleSmall1 {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.titleBold {
+  color: $grey;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.titleSmall1 {
+  color: $grey;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text {
+  color: $black;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.smallText {
+  color: $grey;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.linkTextPrimary {
+  color: $blue;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.errorText {
+  color: rgb(228, 81, 81);
+}
+
+.dropdown {
+  color: inherit;
+  box-shadow: none;
+
+  button {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  button::after {
+    display: none;
+  }
+}
+
+.table {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  tbody {
+    tr {
+      td {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        .userAvatarList {
+          display: flex;
+
+          .item {
+            aspect-ratio: 1;
+            width: 30px;
+            position: relative;
+            border-radius: 50px;
+
+            &::after {
+              position: absolute;
+              border-radius: 50px;
+              border: 1px solid rgba(0, 0, 0, 0.05);
+              width: 30px;
+              height: 30px;
+              left: 0;
+              top: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              content: attr(data);
+              color: white;
+              text-align: center;
+              font-family: Montserrat;
+              font-size: 11px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+
+    tr:nth-child(even) {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+
+      td {
+        background: $blue-light;
+      }
+    }
+  }
+
+  thead th {
+    background: linear-gradient(180deg, #dadada 0%, #bfbfbf 100%);
+  }
+
+  th,
+  td {
+    padding: 15px 1.5rem !important;
+  }
+}
+
+.verticalScroll {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background-color: inherit;
+    border: none;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    opacity: 0.4;
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
